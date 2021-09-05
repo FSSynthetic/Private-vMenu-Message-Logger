@@ -46,6 +46,6 @@ function sendToDiscord(color, name, message, footer)
               },
           }
       }
-  
+    -- This is the function that sends the embed above as a Discord webhook message. You can use this in any server-sided Lua script.
     PerformHttpRequest(Webhook, function(err, text, headers) end, 'POST', json.encode({embeds = embed}), { ['Content-Type'] = 'application/json' })
 end
